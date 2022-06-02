@@ -1,6 +1,6 @@
 FROM openjdk:8-jre
 
-RUN apt-get update && apt-get install -y imagemagick ffmpeg vim python3 python-pip rtmpdump mplayer mpv aria2 atomicparsley
+RUN apt-get update && apt-get install -y imagemagick ffmpeg vim python3 python3-pip python3-brotli rtmpdump mplayer mpv aria2 atomicparsley
 
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir youtube-dl 
+RUN pip3 install --no-cache-dir --upgrade pip && \
+    pip3 install --no-cache-dir yt-dlp 
